@@ -1,0 +1,144 @@
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+  z-index: 199999;
+}
+
+.aidsbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+  z-index: 199999;
+  animation: aids 0.4s infinite;
+  visibility: hidden;
+  margin-bottom: 30%;
+}
+
+
+.funmode {
+  z-index: 11;
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: rainbow-bg 0.1s infinite;
+  visibility: hidden;
+}
+
+@keyframes aids {
+
+  33% {
+    position: relative;
+    left: 400px;
+    transform: rotate(120deg);
+  }
+  66% {
+    position: relative;
+    top: 400px;
+    transform: rotate(240deg);
+  }
+  100%{
+    position: relative;
+    right: 400px;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rainbow-bg {
+  100%,
+  0% {
+    background-color: rgba(255, 127, 0, 0.3);
+  }
+  8% {
+    background-color: rgba(255, 127, 0, 0.3);
+  }
+  16% {
+    background-color: rgba(255, 255, 0, 0.3);
+  }
+  25% {
+    background-color: rgba(127, 255, 0, 0.3);
+  }
+  33% {
+    background-color: rgba(0, 255, 0, 0.3);
+  }
+  41% {
+    background-color: rgba(0, 255, 127, 0.3);
+  }
+  50% {
+    background-color: rgba(0, 255, 255, 0.3);
+  }
+  58% {
+    background-color: rgba(0, 127, 255, 0.3);
+  }
+  66% {
+    background-color: rgba(0, 0, 255, 0.3);
+  }
+  75% {
+    background-color: rgba(127, 0, 255, 0.3);
+  }
+  83% {
+    background-color: rgba(255, 0, 255, 0.3);
+  }
+  91% {
+    background-color: rgba(255, 0, 127, 0.3);
+  }
+}
+
+
+
+
+
+#popsicle #drop-left {
+  animation: drop-left 3s ease-in-out infinite;
+}
+#popsicle #drop-right {
+  animation: drop-right 2.5s ease-in-out infinite;
+}
+
+@keyframes drop-left {
+  from {
+    transform: translate(30px, 239px);
+    opacity: 1;
+  }
+  to {
+    transform: translate(30px, 330px);
+    opacity: 0;
+  }
+}
+@keyframes drop-right {
+  from {
+    transform: translate(120px, 239px);
+    opacity: 1;
+  }
+  to {
+    transform: translate(120px, 360px);
+    opacity: 0;
+  }
+}
+//jkf;ljsalkd;laskjf;lasdkf;kaj;sldjf
+
+
+
+
+
+
+
+
